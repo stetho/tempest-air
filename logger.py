@@ -19,7 +19,7 @@ import db
 
 POLL_INTERVAL   = int(os.getenv("POLL_INTERVAL", "60"))       # seconds
 FLUSH_INTERVAL  = int(os.getenv("FLUSH_INTERVAL", "300"))     # seconds (5 min)
-INGEST_URL      = os.getenv("INGEST_URL", "http://192.168.1.5:5000/api/ingest/air")
+INGEST_URL      = os.getenv("INGEST_URL", "http://192.168.1.5:5001/api/ingest/air")
 INGEST_SECRET   = os.getenv("INGEST_SECRET", "")
 FLUSH_BATCH     = int(os.getenv("FLUSH_BATCH", "100"))         # readings per flush
 PURGE_DAYS      = int(os.getenv("PURGE_DAYS", "7"))
