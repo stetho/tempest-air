@@ -53,12 +53,10 @@ def insert_reading(reading: dict) -> int:
             INSERT INTO readings (
                 timestamp,
                 pm1_0, pm2_5, pm10,
-                pm1_0_atmos, pm2_5_atmos, pm10_atmos,
                 p03um, p05um, p10um, p25um, p50um, p100um
             ) VALUES (
                 :timestamp,
                 :pm1_0, :pm2_5, :pm10,
-                :pm1_0_atmos, :pm2_5_atmos, :pm10_atmos,
                 :p03um, :p05um, :p10um, :p25um, :p50um, :p100um
             )
         """, reading)
